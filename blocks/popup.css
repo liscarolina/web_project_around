@@ -77,13 +77,9 @@
 
 .popup__button_type_send {
   min-width: 358px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   color: #ffffff;
   font-size: 18px;
   line-height: 1.21;
   min-height: 50px;
-}
-
-.popup__button_type_send {
-  background-color: black;
 }
