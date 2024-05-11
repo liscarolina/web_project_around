@@ -30,6 +30,7 @@
             <button
               class="profile__button profile__button_type_edit"
               type="button"
+              id="edit-button"
             >
               <img
                 class="profile__icon profile__icon_type_edit"
@@ -41,6 +42,7 @@
           <button
             class="profile__button profile__button_type_add"
             type="button"
+            id="add-button"
           >
             <img
               class="profile__icon profile__icon_type_add"
@@ -51,220 +53,65 @@
         </section>
         <section class="elements">
           <div class="elements__cards">
-            <div class="elements__card">
-              <img
-                class="elements__image"
-                src="./images/element-image-Yosemite.jpg"
-                alt="Imagen del Valle de Yosemite"
-              />
-              <button
-                class="elements__button elements__button_type_trash"
-                type="button"
-              >
-                <img
-                  class="elements__icon elements__icon_type_trash-cap"
-                  src="./images/trashcap.svg"
-                  alt="Botón de eliminar"
-                />
-                <img
-                  class="elements__icon elements__icon_type_trash-can"
-                  src="./images/trashcan.svg"
-                  alt="Botón de eliminar"
-                />
-              </button>
-              <div class="elements__title">
-                <h3 class="elements__text">Valle de Yosemite</h3>
+            <template class="elements__template">
+              <div class="elements__card">
+                <button class="elements__image-button">
+                  <img class="elements__image" src="" alt="" />
+                </button>
                 <button
-                  class="elements__button elements__button_type_like"
+                  class="elements__button elements__button_type_trash"
                   type="button"
                 >
                   <img
-                    class="elements__icon elements__icon_type_like-icon"
-                    src="./images/like.svg"
-                    alt="Botón de gustar"
+                    class="elements__icon elements__icon_type_trash-cap"
+                    src="./images/trashcap.svg"
+                    alt="Botón de eliminar"
                   />
-                </button>
-              </div>
-            </div>
-            <div class="elements__card">
-              <img
-                class="elements__image"
-                src="./images/element-image-Galapagos.jpg"
-                alt="Imagen de las Islas Galápagos"
-              />
-              <button
-                class="elements__button elements__button_type_trash"
-                type="button"
-              >
-                <img
-                  class="elements__icon elements__icon_type_trash-cap"
-                  src="./images/trashcap.svg"
-                  alt="Botón de eliminar"
-                />
-                <img
-                  class="elements__icon elements__icon_type_trash-can"
-                  src="./images/trashcan.svg"
-                  alt="Botón de eliminar"
-                />
-              </button>
-              <div class="elements__title">
-                <h3 class="elements__text">Islas Galápagos</h3>
-                <button
-                  class="elements__button elements__button_type_like"
-                  type="button"
-                >
                   <img
-                    class="elements__icon elements__icon_type_like-icon"
-                    src="./images/like.svg"
-                    alt="Botón de gustar"
+                    class="elements__icon elements__icon_type_trash-can"
+                    src="./images/trashcan.svg"
+                    alt="Botón de eliminar"
                   />
                 </button>
+                <div class="elements__title">
+                  <h3 class="elements__text"></h3>
+                  <button
+                    class="elements__button elements__button_type_like"
+                    type="button"
+                  >
+                    <img
+                      class="elements__icon elements__icon_type_like-icon"
+                      src="./images/like.svg"
+                      alt="Botón de gustar"
+                    />
+                  </button>
+                </div>
+                <div class="elements__window">
+                  <div class="elements__container">
+                    <button
+                      class="elements__button elements__button_type_close"
+                      type="button"
+                      id="window-close-button"
+                    >
+                      <img
+                        class="elements__icon elements__icon_type_close"
+                        src="./images/popup-close-icon.svg"
+                        alt="Cerrar"
+                      />
+                    </button>
+                    <img class="elements__window-image" src="" alt="" />
+                    <h3 class="elements__window-name"></h3>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="elements__card">
-              <img
-                class="elements__image"
-                src="./images/element-image-Calvas.jpg"
-                alt="Imagen de las Montañas Calvas"
-              />
-              <button
-                class="elements__button elements__button_type_trash"
-                type="button"
-              >
-                <img
-                  class="elements__icon elements__icon_type_trash-cap"
-                  src="./images/trashcap.svg"
-                  alt="Botón de eliminar"
-                />
-                <img
-                  class="elements__icon elements__icon_type_trash-can"
-                  src="./images/trashcan.svg"
-                  alt="Botón de eliminar"
-                />
-              </button>
-              <div class="elements__title">
-                <h3 class="elements__text">Montañas Calvas</h3>
-                <button
-                  class="elements__button elements__button_type_like"
-                  type="button"
-                >
-                  <img
-                    class="elements__icon elements__icon_type_like-icon"
-                    src="./images/like.svg"
-                    alt="Botón de gustar"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="elements__card">
-              <img
-                class="elements__image"
-                src="./images/element-image-Latemar.jpeg"
-                alt="Imagen de Latemar"
-              />
-              <button
-                class="elements__button elements__button_type_trash"
-                type="button"
-              >
-                <img
-                  class="elements__icon elements__icon_type_trash-cap"
-                  src="./images/trashcap.svg"
-                  alt="Botón de eliminar"
-                />
-                <img
-                  class="elements__icon elements__icon_type_trash-can"
-                  src="./images/trashcan.svg"
-                  alt="Botón de eliminar"
-                />
-              </button>
-              <div class="elements__title">
-                <h3 class="elements__text">Latemar</h3>
-                <button class="elements__button elements__button_type_like">
-                  <img
-                    class="elements__icon elements__icon_type_like-icon"
-                    src="./images/like.svg"
-                    alt="Botón de gustar"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="elements__card">
-              <img
-                class="elements__image"
-                src="./images/element-image-Vanoise.jpeg"
-                alt="Imagen del Parque Nacional Vanoise"
-              />
-              <button
-                class="elements__button elements__button_type_trash"
-                type="button"
-              >
-                <img
-                  class="elements__icon elements__icon_type_trash-cap"
-                  src="./images/trashcap.svg"
-                  alt="Botón de eliminar"
-                />
-                <img
-                  class="elements__icon elements__icon_type_trash-can"
-                  src="./images/trashcan.svg"
-                  alt="Botón de eliminar"
-                />
-              </button>
-              <div class="elements__title">
-                <h3 class="elements__text">Paque Nacional Vanoise</h3>
-                <button
-                  class="elements__button elements__button_type_like"
-                  type="button"
-                >
-                  <img
-                    class="elements__icon elements__icon_type_like-icon"
-                    src="./images/like.svg"
-                    alt="Botón de gustar"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="elements__card">
-              <img
-                class="elements__image"
-                src="./images/element-image-Lake-Dibraies.jpeg"
-                alt="Imagen del Lago di Braies"
-              />
-              <button
-                class="elements__button elements__button_type_trash"
-                type="button"
-              >
-                <img
-                  class="elements__icon elements__icon_type_trash-cap"
-                  src="./images/trashcap.svg"
-                  alt="Botón de eliminar"
-                />
-                <img
-                  class="elements__icon elements__icon_type_trash-can"
-                  src="./images/trashcan.svg"
-                  alt="Botón de eliminar"
-                />
-              </button>
-              <div class="elements__title">
-                <h3 class="elements__text">Lago di Braies</h3>
-                <button
-                  class="elements__button elements__button_type_like"
-                  type="button"
-                >
-                  <img
-                    class="elements__icon elements__icon_type_like-icon"
-                    src="./images/like.svg"
-                    alt="Botón de gustar"
-                  />
-                </button>
-              </div>
-            </div>
+            </template>
           </div>
         </section>
       </main>
       <footer class="footer">
         <p class="footer__copyright">© 2024 Around The U.S.</p>
       </footer>
-      <div class="popup">
+      <div class="popup" id="profile">
         <div class="popup__container">
           <button class="popup__button popup__button_type_close" type="button">
             <img
@@ -294,6 +141,49 @@
               />
               <button
                 class="popup__button popup__button_type_send"
+                type="submit"
+              >
+                Guardar
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="popup" id="add-popup">
+        <div class="popup__container">
+          <button
+            class="popup__button popup__button_type_close"
+            type="button"
+            id="close-add-popup"
+          >
+            <img
+              class="popup__icon"
+              src="./images/popup-close-icon.svg"
+              alt="Cerrar"
+            />
+          </button>
+          <h2 class="popup__title">Nuevo Lugar</h2>
+          <form class="popup__form" id="add-form">
+            <fieldset class="popup__name">
+              <input
+                class="popup__item popup__item_type_name"
+                id="place-input"
+                type="text"
+                name="name"
+                placeholder="Título"
+                required
+              />
+              <input
+                class="popup__item popup__item_type_about"
+                id="link-input"
+                type="text"
+                name="name"
+                placeholder="Enlace a la imagen"
+                required
+              />
+              <button
+                class="popup__button popup__button_type_send"
+                id="add-card-button"
                 type="submit"
               >
                 Guardar
