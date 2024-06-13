@@ -97,10 +97,15 @@ function changeProfile(evt) {
   evt.preventDefault();
   let nameInput = document.querySelector(".popup__item_type_name");
   let aboutInput = document.querySelector(".popup__item_type_about");
+  let pictureInput = document.querySelector(".popup__item_type_picture");
+
   let profileName = document.querySelector(".profile__name");
   let profileAbout = document.querySelector(".profile__description");
+  let profilePicture = document.querySelector(".profile__avatar");
+
   profileName.textContent = nameInput.value;
   profileAbout.textContent = aboutInput.value;
+  profilePicture.src = pictureInput.value;
 }
 
 let submitButton = document.querySelector(".popup__button_type_send");
