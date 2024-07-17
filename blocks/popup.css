@@ -70,6 +70,18 @@
   margin-bottom: 29.74px;
 }
 
+.popup__item_invalid {
+  border-bottom: 1px solid #ff0000;
+  color: #ff0000;
+}
+
+.popup__error {
+  color: #ff0000;
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: -20px;
+}
+
 .popup__item::placeholder {
   color: #c4c4c4;
   font-size: 14px;
@@ -82,4 +94,10 @@
   font-size: 18px;
   line-height: 1.21;
   min-height: 50px;
+}
+
+.popup__button_type_send-inactive {
+  background-color: #ffffff;
+  color: #cccccc;
+  border: 1px solid #cccccc;
 }
