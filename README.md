@@ -10,3 +10,6 @@ La página web de "Around" es el quinto proyecto en el programa de Ingeniería d
 - Media queries
 - FIGMA
 - Principios de JAVA Botones y cambio de HTML en base a formulario
+
+## Dirección en GitPages
+https://liscarolina.github.io/web_project_around/
