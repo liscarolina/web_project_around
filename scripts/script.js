@@ -12,9 +12,7 @@ import {
   closeaddButton,
 } from "./utils.js";
 
-// let formElement = document.querySelector(".popup__container");
 let formSelector = document.querySelector(".popup__form");
-// let formItem = formSelector.querySelector(".popup__item");
 let cardForm = document.querySelector("#add-form");
 
 const initialCards = [

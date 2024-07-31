@@ -28,13 +28,6 @@
   cursor: pointer;
 }
 
-/* .elements__image-button {
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  border-radius: 10px 10px 0px 0px;
-} */
-
 .elements__button_type_trash {
   background: none;
   border: none;
