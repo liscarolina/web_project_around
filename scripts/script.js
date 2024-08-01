@@ -59,6 +59,7 @@ function createnewcard(evt) {
 
 cardForm.addEventListener("submit", (evt) => {
   createnewcard(evt);
+  closeAddPopup();
 });
 
 function changeProfile(evt) {
