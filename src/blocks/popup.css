@@ -101,3 +101,23 @@
   color: #cccccc;
   border: 1px solid #cccccc;
 }
+
+.popup__window-image {
+  max-height: 75vh;
+  max-width: 75vw;
+}
+
+.popup__window-name {
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.popup__container-window {
+  background: none;
+  color: white;
+  padding-bottom: 0;
+  font-size: 12px;
+  line-height: 1.21;
+}

@@ -84,27 +84,6 @@
                     />
                   </button>
                 </div>
-                <div class="elements__window">
-                  <div class="elements__container">
-                    <button
-                      class="elements__button elements__button_type_close"
-                      type="button"
-                      id="window-close-button"
-                    >
-                      <img
-                        class="elements__icon elements__icon_type_close"
-                        src="./images/popup-close-icon.svg"
-                        alt="Cerrar"
-                      />
-                    </button>
-                    <img
-                      class="elements__window-image"
-                      src=" "
-                      alt="imagen del lugar"
-                    />
-                    <h3 class="elements__window-name"></h3>
-                  </div>
-                </div>
               </div>
             </template>
           </div>
@@ -113,6 +92,23 @@
       <footer class="footer">
         <p class="footer__copyright">© 2024 Around The U.S.</p>
       </footer>
+      <div class="popup" id="popup_image">
+        <div class="popup__container popup__container-window">
+          <button
+            class="popup__button popup__button_type_close"
+            type="button"
+            id="window-close-button"
+          >
+            <img
+              class="popup__icon popup__icon_type_close"
+              src="./images/popup-close-icon.svg"
+              alt="Cerrar"
+            />
+          </button>
+          <img class="popup__window-image" src=" " alt="imagen del lugar" />
+          <h3 class="popup__window-name"></h3>
+        </div>
+      </div>
       <div class="popup" id="profile">
         <div class="popup__container">
           <button class="popup__button popup__button_type_close" type="button">
@@ -206,6 +202,5 @@
         </div>
       </div>
     </div>
-    <script type="module" src="./scripts/script.js"></script>
   </body>
 </html>

@@ -1,7 +1,8 @@
-export class Card {
-  constructor(name, link) {
+export default class Card {
+  constructor(name, link, handleCardClick) {
     this._name = name;
     this._link = link;
+    this._handleCardClick = handleCardClick;
   }
 
   _getTemplate() {
@@ -18,9 +19,6 @@ export class Card {
     this._setEventListeners();
     this._element.querySelector(".elements__text").textContent = this._name;
     this._element.querySelector(".elements__image").src = this._link;
-    this._element.querySelector(".elements__window-image").src = this._link;
-    this._element.querySelector(".elements__window-name").textContent =
-      this._name;
 
     return this._element;
   }
@@ -35,19 +33,7 @@ export class Card {
     this._element
       .querySelector(".elements__image")
       .addEventListener("click", () => {
-        this._handleImageClick();
-      });
-
-    this._element
-      .querySelector("#window-close-button")
-      .addEventListener("click", () => {
-        this._handleWindowCloseClick();
-      });
-
-    this._element
-      .querySelector(".elements__window")
-      .addEventListener("click", () => {
-        this._handleWindowCloseClick();
+        this._handleCardClick();
       });
 
     this._element
@@ -65,18 +51,6 @@ export class Card {
     this._element
       .querySelector(".elements__button_type_like")
       .classList.toggle("elements__button_type_like-active");
-  }
-
-  _handleImageClick() {
-    this._element
-      .querySelector(".elements__window")
-      .classList.add("elements__window_opened");
-  }
-
-  _handleWindowCloseClick() {
-    this._element
-      .querySelector(".elements__window")
-      .classList.remove("elements__window_opened");
   }
 
   _handleCardRemoval() {
