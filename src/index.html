@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Around The U.S.</title>
-    <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body>
     <div class="page">
       <header class="header">
         <img
           class="header__logo"
-          src="./images/header-logo.svg"
+          src="<%=require('./images/header-logo.svg')%>"
           alt="Logo de Alrededor de los EEUU"
         />
       </header>
@@ -20,7 +19,7 @@
           <div class="profile__content">
             <img
               class="profile__avatar"
-              src="./images/avatar-image.jpg"
+              src="<%=require('./images/avatar-image.jpg')%>"
               alt="Imagen de Jacques Costeau"
             />
             <div class="profile__info">
@@ -34,7 +33,7 @@
             >
               <img
                 class="profile__icon profile__icon_type_edit"
-                src="./images/profile-edit-button.svg"
+                src="<%=require('./images/profile-edit-button.svg')%>"
                 alt="Botón de editar"
               />
             </button>
@@ -46,7 +45,7 @@
           >
             <img
               class="profile__icon profile__icon_type_add"
-              src="./images/profile-add-button.svg"
+              src="<%=require('./images/profile-add-button.svg')%>"
               alt="Botón de añadir"
             />
           </button>
@@ -62,12 +61,12 @@
                 >
                   <img
                     class="elements__icon elements__icon_type_trash-cap"
-                    src="./images/trashcap.svg"
+                    src="<%=require('./images/trashcap.svg')%>"
                     alt="Botón de eliminar"
                   />
                   <img
                     class="elements__icon elements__icon_type_trash-can"
-                    src="./images/trashcan.svg"
+                    src="<%=require('./images/trashcan.svg')%>"
                     alt="Botón de eliminar"
                   />
                 </button>
@@ -79,7 +78,7 @@
                   >
                     <img
                       class="elements__icon elements__icon_type_like-icon"
-                      src="./images/like.svg"
+                      src="<%=require('./images/like.svg')%>"
                       alt="Botón de gustar"
                     />
                   </button>
@@ -101,7 +100,7 @@
           >
             <img
               class="popup__icon popup__icon_type_close"
-              src="./images/popup-close-icon.svg"
+              src="<%=require('./images/popup-close-icon.svg')%>"
               alt="Cerrar"
             />
           </button>
@@ -114,7 +113,7 @@
           <button class="popup__button popup__button_type_close" type="button">
             <img
               class="popup__icon"
-              src="./images/popup-close-icon.svg"
+              src="<%=require('./images/popup-close-icon.svg')%>"
               alt="Cerrar"
             />
           </button>
@@ -162,7 +161,7 @@
           >
             <img
               class="popup__icon"
-              src="./images/popup-close-icon.svg"
+              src="<%=require('./images/popup-close-icon.svg')%>"
               alt="Cerrar"
             />
           </button>

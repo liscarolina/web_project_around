@@ -1,9 +1,10 @@
-import Section from "../components/section.js";
-import Card from "../components/card.js";
-import PopupWithImage from "../components/popupWithImage.js";
-import PopupWithForm from "../components/popupWithForm.js";
-import UserInfo from "../components/userInfo.js";
-import FormValidator from "../components/formValidator.js";
+import "./pages/index.css";
+import Section from "./components/section.js";
+import Card from "./components/card.js";
+import PopupWithImage from "./components/popupWithImage.js";
+import PopupWithForm from "./components/popupWithForm.js";
+import UserInfo from "./components/userInfo.js";
+import FormValidator from "./components/formValidator.js";
 
 import {
   initialCards,
@@ -16,7 +17,7 @@ import {
   jobSelector,
   formSelector,
   cardForm,
-} from "../components/constants.js";
+} from "./components/constants.js";
 
 const cardList = new Section(
   {
