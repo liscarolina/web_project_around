@@ -3,23 +3,27 @@ export {
   editPopup,
   addButton,
   addPopup,
+  avatarPopup,
   formSelector,
   cardForm,
   cardsContainer,
   initialCards,
   nameSelector,
   jobSelector,
+  avatar,
 };
 
 let editButton = document.querySelector("#edit-button");
 let editPopup = document.querySelector("#profile");
 let addButton = document.querySelector("#add-button");
 let addPopup = document.querySelector("#add-popup");
+let avatarPopup = document.querySelector("#avatar-popup");
 let formSelector = document.querySelector(".popup__form");
 let cardForm = document.querySelector("#add-form");
 let cardsContainer = ".elements";
 const nameSelector = ".profile__name";
 const jobSelector = ".profile__description";
+const avatar = document.querySelector(".profile__avatar");
 
 const initialCards = [
   {

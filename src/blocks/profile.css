@@ -18,8 +18,22 @@
 
 .profile__avatar {
   border-radius: 50%;
-  max-height: 120px;
-  max-width: 120px;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.profile__avatar:hover {
+  opacity: 60%;
+}
+
+.profile__layover {
+  display: none;
+  position: absolute;
+  left: 15%;
+}
+.profile__avatar:hover ~ .profile__layover {
+  display: initial;
 }
 
 .profile__info {

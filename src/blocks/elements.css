@@ -91,6 +91,13 @@
   max-height: 19px;
 }
 
+.elements__counter {
+  margin: 0;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+}
+
 .elements__button_type_close {
   padding: 0;
   position: absolute;

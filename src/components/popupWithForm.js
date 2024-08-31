@@ -32,4 +32,18 @@ export default class PopupWithForm extends Popup {
       this.close();
     });
   }
+
+  renderLoading(isLoading) {
+    if (isLoading) {
+      const submitButton = this._popup.querySelector(
+        ".popup__button_type_send"
+      );
+      submitButton.textContent = "Guardando...";
+    } else {
+      const submitButton = this._popup.querySelector(
+        ".popup__button_type_send"
+      );
+      submitButton.textContent = "Guardar";
+    }
+  }
 }

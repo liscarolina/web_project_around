@@ -54,6 +54,17 @@
   min-width: 358px;
 }
 
+.popup__title-delete {
+  padding-bottom: 38px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.popup__title-profile-pic {
+  font-size: 24px;
+  font-weight: 900;
+}
+
 .popup__name {
   border: none;
   display: flex;
