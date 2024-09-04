@@ -13,6 +13,7 @@ La página web de "Around" es la actualización del sprint 11 proyecto en el pro
 - Validación de formularios
 - Programación orientada a objetos
 - Creación de clases
+- Manejo de APIs
 
 ## Dirección en GitPages
 

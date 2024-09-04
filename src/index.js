@@ -120,7 +120,7 @@ const addCardPopup = new PopupWithForm(addPopup, ({ place, link }) => {
       currentUser,
       [],
       () => {
-        popupImage.open(card.place, card.link);
+        popupImage.open(card.name, card.link);
       },
       (id, remove) => {
         popupWithConfirmation.open(() => {
